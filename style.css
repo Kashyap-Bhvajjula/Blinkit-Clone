@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    Display: none;
+}
+
+/* Navbar Section  */
+#delivery-div{
+    cursor: pointer;
+}
+#search_bar {
+    border-radius: 10px !important;
+}
+
+#search_bar>input {
+    width: 50vw;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+/* Hero Section  */
+#hero-section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#hero-section > img{
+    width: 85vw;
+}
+
+/* Scrollable Div Section  */
+.scrollable_div {
+    width: 85vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.list {
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.list>img {
+    margin-left: 20px;
+}
+
+/* Categories Section  */
+#categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    justify-content: center;
+    margin: auto;
+}
+#categories-list > img{
+    cursor: pointer;
+}
+
+/* Sub Category Section  */
+.my-category {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card section  */
+.my-card {
+    height: 300px;
+    width: 180px;
+    margin-right: 20px;
+    display: inline-block !important;
+}
+
+.my-card>img {
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_name {
+    font-size: 14px;
+    font-weight: 600;
+    text-wrap: wrap;
+}
+
+.product_weight {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.product_price {
+    margin: 0;
+    padding: 0 !important;
+    font-weight: 600;
+}
+
+/* footer Section  */
+footer {
+    width: 100vw;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+
+
+/* responsive section  */
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #delivery-div {
+        border: none !important;
+    }
+
+    #search_bar  {
+        display: flex;
+        align-items: center;
+    }
+
+    #search_bar>input {
+        width: 80vw;
+    }
+
+    .scrollable_div {
+        margin-top: 50px;
+    }
+
+    #hero-section {
+        display: none;
+    }
+}
